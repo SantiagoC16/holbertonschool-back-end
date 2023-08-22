@@ -15,4 +15,5 @@ if __name__ == "__main__":
         for id_csv in response_todos:
             if id_csv['userId'] == id:
                 file_csv.write('"{}", "{}", "{}", "{}"\n'.format(
-                    id, response_users['username'], id_csv['completed'], id_csv['title']))
+                    id, response_users['username'],
+                    id_csv['completed'], id_csv['title']))
