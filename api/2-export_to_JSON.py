@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """task 0"""
 
+import json
 import requests
 import sys
-import json
 
 if __name__ == "__main__":
     users = "https://jsonplaceholder.typicode.com/users/{}"
@@ -20,4 +20,4 @@ if __name__ == "__main__":
                     {"task": id_csv['title'],
                      "completed": id_csv['completed'],
                      "username": response_users['username']})
-    json.dump({'{}'.format(id): _list}, file_csv)
+        json.dump({'{}'.format(id): _list}, file_csv)
